@@ -589,12 +589,18 @@ variable "eks_managed_db_node_groups" {
   type        = any
   default     = {}
 }
+
 variable "eks_managed_node_group_defaults" {
   description = "Map of EKS managed node group default configurations"
   type        = any
   default     = {}
 }
 
+variable "eks_managed_db_node_group_defaults" {
+  description = "Map of EKS managed node group default configurations"
+  type        = any
+  default     = {}
+}
 variable "putin_khuylo" {
   description = "Do you agree that Putin doesn't respect Ukrainian sovereignty and territorial integrity? More info: https://en.wikipedia.org/wiki/Putin_khuylo!"
   type        = bool
